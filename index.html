@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Cybersecurity Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('dark-mode');
+            localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+        }
+        document.addEventListener("DOMContentLoaded", function() {
+            if (localStorage.getItem('theme') === 'dark') {
+                document.body.classList.add('dark-mode');
+            }
+        });
+    </script>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+    <header>
+        <h1>Your Name</h1>
+        <p>Cybersecurity Specialist | Ethical Hacker | Security Researcher</p>
+    </header>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm a cybersecurity specialist passionate about ethical hacking, penetration testing, and security research. I help secure digital infrastructures and analyze vulnerabilities.</p>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>Penetration Testing Report</strong> - Conducted a security audit on a web application.</li>
+            <li><strong>Malware Analysis</strong> - Reverse-engineered a malware sample.</li>
+            <li><strong>Custom Security Tool</strong> - Developed a Python-based security scanner.</li>
+        </ul>
+    </section>
+    
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Penetration Testing</li>
+            <li>Network Security</li>
+            <li>Python & Bash Scripting</li>
+            <li>Malware Analysis</li>
+            <li>Cloud Security</li>
+        </ul>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: your.email@example.com</p>
+        <p>LinkedIn: linkedin.com/in/yourname</p>
+        <p>GitHub: github.com/yourusername</p>
+    </section>
+</body>
+</html>
